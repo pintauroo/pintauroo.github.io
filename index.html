@@ -5,48 +5,45 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<nav id="nav">
-		<ul class="container">
-		  <li><a href="#top">Top</a></li>
-		  <li><a href="#work">Work</a></li>
-		  <li><a href="#portfolio">Portfolio</a></li>
-		  <li><a id="download-link" href="#">pdf</a></li>
-		</ul>
-	</nav>
-
-	<script>
-		// Get a reference to the download link element
-		var downloadLink = document.getElementById('download-link');
-	  
-		// Add a click event listener to the download link
-		downloadLink.addEventListener('click', function(event) {
-		  event.preventDefault(); // Prevent the default link behavior
-		  
-		  // Specify the raw Git URL of the file to be downloaded
-		  var fileUrl = 'https://github.com/pintauroo/pintauroo.github.io/blob/main/AndreaPinto_Resume.pdf'; // Replace with your file's URL
-	  
-		  // Create a temporary link element to trigger the download
-		  var link = document.createElement('a');
-		  link.href = fileUrl;
-		  link.download = 'filename.pdf'; // Set the filename here
-		  document.body.appendChild(link); // Add the link to the page
-		  link.click(); // Trigger the download
-		  document.body.removeChild(link); // Remove the link from the page
-		});
-	  </script>
-
-
+	<head>
+		<title>Andrea Pinto PhD</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
 	<body class="is-preload">
 
 		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#pdf">pdf</a></li>
-				</ul>
-			</nav>
+		<nav id="nav">
+			<ul class="container">
+			  <li><a href="#top">Top</a></li>
+			  <li><a href="#work">Work</a></li>
+			  <li><a href="#portfolio">Portfolio</a></li>
+			  <li><a id="download-link" href="#">pdf</a></li>
+			</ul>
+		</nav>
+		
+		<script>
+			// Get a reference to the download link element
+			var downloadLink = document.getElementById('download-link');
+			
+			// Add a click event listener to the download link
+			downloadLink.addEventListener('click', function(event) {
+				event.preventDefault(); // Prevent the default link behavior
+				
+				// Specify the raw Git URL of the file to be downloaded
+				var fileUrl = 'https://github.com/pintauroo/pintauroo.github.io/blob/main/AndreaPinto_Resume.pdf'; // Replace with your file's URL
+			
+				// Create a temporary link element to trigger the download
+				var link = document.createElement('a');
+				link.href = fileUrl;
+				link.download = 'filename.pdf'; // Set the filename here
+				document.body.appendChild(link); // Add the link to the page
+				link.click(); // Trigger the download
+				document.body.removeChild(link); // Remove the link from the page
+			});
+		</script>
+		
 
 
 
@@ -226,11 +223,11 @@
 			</article>
 
 
-			<script>
+			<!-- <script>
 				document.getElementById("pdf").addEventListener("click", function() {
 					window.location.href = "https://github.com/pintauroo/pintauroo.github.io/blob/main/AndreaPinto_Resume.pdf";
 				});
-			</script>
+				</script> -->
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
