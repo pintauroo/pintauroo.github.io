@@ -1,237 +1,124 @@
 <!DOCTYPE HTML>
-
-
 <html>
 	<head>
-		<title>Andrea Pinto PhD</title>
+		<title>Andrea Pinto, PhD</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
-		<!-- Nav -->
 		<nav id="nav">
 			<ul class="container">
-			  <li><a href="#top">Home</a></li>
-			  <li><a href="#work">Profile</a></li>
-			  <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-			  <li><a id="download-link" href="#">Resume</a></li>
+				<li><a href="#top">Home</a></li>
+				<li><a href="#work">Profile</a></li>
+				<li><a href="AndreaPinto_Resume.pdf" target="_blank">Resume</a></li>
 			</ul>
 		</nav>
+
+		<article id="top" class="wrapper style1">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 col-5-large col-12-medium">
+						<span class="image fit"><img src="images/pic00.jpg" alt="Andrea Pinto" /></span>
+						<a href="mailto:andrea.pinto.1@slu.edu">andrea.pinto.1@slu.edu</a>
+					</div>
+					<div class="col-8 col-7-large col-12-medium">
+						<header>
+							<h1>Hi. I'm <strong>Andrea Pinto</strong>.</h1>
+						</header>
+						<p>I am a Ph.D. candidate in Computer Science at Saint Louis University, advised by Dr. Flavio Esposito.</p>
+						
+						<p>My research focuses on distributed training and bandwidth-aware orchestration to alleviate network bottlenecks. I try to make systems perform better, deeply understaning the problems and how to solve them</p>
+
+						<p>I received my M.S. and B.S. in Computer Engineering from the University of Naples, Federico II. During my Master's, I was a research intern at Ericsson Research in Helsinki, where I wrote my thesis on integrating heterogeneous IoT ecosystems. Before my Ph.D., I worked as a Cloud Engineer at Ericsson in Italy, contributing to the company's shift towards microservice-based cloud architectures.</p>
+						<a href="#work" class="button large scrolly">Learn more about what I do</a>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article id="work" class="wrapper style2">
+			<div class="container">
+				<header>
+					<h2>Publications</h2>
+					<p>A selection of my peer-reviewed work.</p>
+				</header>
+				<div class="row aln-center">
+					<div class="col-10 col-12-medium">
+						<ul class="publication-list">
+							<li>
+								<p>
+									<strong>Characterizing Location Management Function Performance in 5G Core Networks (Best Student Paper Award)</strong><br />
+									<em>A. Pinto, G. Santaromita, C. Fiandrino, D. Giustiniano, & F. Esposito.</em><br />
+									In 2022 IEEE Conference on Network Function Virtualization and Software Defined Networks (NFV-SDN).
+									<a href="https://doi.org/10.1109/NFV-SDN56302.2022.9974927" target="_blank">[DOI]</a>
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>Experimenting with Localization Management Functions in 5G Core Networks</strong><br />
+									<em>A. Pinto, G. Santaromita, C. Fiandrino, D. Giustiniano, & F. Esposito.</em><br />
+									In Proceedings of the 28th Annual International Conference on Mobile Computing And Networking (MobiCom '22).
+									<a href="https://doi.org/10.1145/3495243.3558762" target="_blank">[DOI]</a>
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>Privacy and Efficiency of Communications in Federated Split Learning</strong><br />
+									<em>Z. Zhang, A. Pinto, V. Turina, F. Esposito & I. Matta.</em><br />
+									In IEEE Transactions on Big Data, vol. 9, no. 5, Oct. 2023.
+									<a href="https://doi.org/10.1109/TBDATA.2023.3280405" target="_blank">[DOI]</a>
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>Hercules: An Emulation-Based Framework for Transport Layer Measurements over 5G Wireless Networks</strong><br />
+									<em>A. Pinto, A. Ashdown, T. Bin Hassan, H. Cheng, F. Esposito, L. Bonati, S. D'Oro, T. Melodia, & F. Restuccia.</em><br />
+									In Proceedings of the 17th ACM Workshop on Wireless Network Testbeds, Experimental evaluation & Characterization (WiNTECH '23).
+									<a href="https://doi.org/10.1145/3615453.3616516" target="_blank">[DOI]</a>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article id="contact" class="wrapper style4">
+			<div class="container medium">
+				<header>
+					<h2>Get In Touch</h2>
+				</header>
+				<div class="row">
+					<div class="col-12">
+						<hr />
+						<h3>Find me on...</h3>
+						<ul class="social">
+							<li><a href="https://www.linkedin.com/in/andreapinto1994/" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/pintauroo" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+							</ul>
+						<hr />
+					</div>
+				</div>
+				<footer>
+					<ul id="copyright">
+						<li>&copy; <span id="copyright-year"></span> Andrea Pinto. All rights reserved.</li>
+					</ul>
+				</footer>
+			</div>
+		</article>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 		
 		<script>
-			// Get a reference to the download link element
-			var downloadLink = document.getElementById('download-link');
-			
-			// Add a click event listener to the download link
-			downloadLink.addEventListener('click', function(event) {
-				event.preventDefault(); // Prevent the default link behavior
-				
-				// Specify the raw Git URL of the file to be downloaded
-				var fileUrl = 'https://github.com/pintauroo/pintauroo.github.io/blob/main/AndreaPinto_Resume.pdf'; // Replace with your file's URL
-			
-				// Create a temporary link element to trigger the download
-				var link = document.createElement('a');
-				link.href = fileUrl;
-				link.download = 'filename.pdf'; // Set the filename here
-				document.body.appendChild(link); // Add the link to the page
-				link.click(); // Trigger the download
-				document.body.removeChild(link); // Remove the link from the page
-			});
+			document.getElementById('copyright-year').textContent = new Date().getFullYear();
 		</script>
-		
-
-
-
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
-							<a href="mailto:andrea.pinto.1@slu.edu">andrea DOT pinto DOT 1 AT slu DOT edu</a>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Hi. I'm <strong>Andrea Pinto</strong>.</h1>
-							</header>
-							<p>Andrea Pinto is a driven Ph.D. student in Computer Science.</p>
-							
-							<p>With his advisor Dr. Flavio Esposito, he is leveraging cutting-edge technologies such as Software-Defined Networks, Open RAN of NextG Cellular Networks, and Artificial Intelligence methods.</p>
-
-							<p>Andrea received his MS and BS in Computer Engineering from the University of Naples, Federico II, Italy, in 2020. 
-							During his Master's, he joined the research team at Ericsson Research Lab in Helsinki, Finland, to write his master thesis on IoT heterogeneous ecosystem integration. 
-							He worked as a Cloud Engineer at Ericsson in Italy, where he supported the shift towards microservices cloud architectures.</p>
-							<a href="#work" class="button large scrolly">Learn about what I do</a>
-						</div>
-					</div>
-				</div>
-			</article>
-
-		<!-- Work -->
-			<article id="work" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Publications</h2>
-					</header>
-					<ul class="publication-list">
-						<li>
-							<p><strong>Characterizing Location Management Function Performance in 5G Core Networks. (Best Student Paper Award)</strong> Pinto, A., Santaromita, G., Fiandrino, C., Giustiniano, D., &amp; Esposito, F. (2022). In <em>2022 IEEE Conference on Network Function Virtualization and Software Defined Networks (NFV-SDN)</em> (pp. 66-71). <a href="https://doi.org/10.1109/NFV-SDN56302.2022.9974927">10.1109/NFV-SDN56302.2022.9974927</a>.<br>Winner of the Best Student Paper Award at NFV-SDN 2022.</p>
-						</li>
-						<li>
-							<p><strong>Experimenting with Localization Management Functions in 5G Core Networks.</strong> Pinto, A., Santaromita, G., Fiandrino, C., Giustiniano, D., &amp; Esposito, F. (2022). In <em>Proceedings of the 28th Annual International Conference on Mobile Computing And Networking</em> (pp. 806-807). Association for Computing Machinery. <a href="https://doi.org/10.1145/3495243.3558762">10.1145/3495243.3558762</a></p>
-						</li>
-						<li>
-							<p><strong>"Privacy and Efficiency of Communications in Federated Split Learning,"</strong>  Z. Zhang, A. Pinto, V. Turina, F. Esposito and I. Matta. <em>In IEEE Transactions on Big Data</em>, vol. 9, no. 5, pp. 1380-1391, Oct. 2023, doi: <a href="https://doi.org/10.1109/TBDATA.2023.3280405">10.1109/TBDATA.2023.3280405.</a></p>
-						</li>
-						<li>
-							<p><strong>Hercules: An Emulation-Based Framework for Transport Layer Measurements over 5G Wireless Networks</strong> Pinto, Andrea and Ashdown, Andrew and Bin Hassan, Tanzil and Cheng, Hai and Esposito, Flavio and Bonati, Leonardo and D'Oro, Salvatore and Melodia, Tommaso and Restuccia, Francesco (2023). Madrid, Spain. WiNTECH '23. Association for Computing Machinery. <a href="https://doi.org/10.1145/3615453.3616516">10.1145/3615453.3616516</a></p>
-						</li>
-					</ul>
-				</div>
-			</article>
-
-
-		<!-- Portfolio -->
-			<!-- <article id="portfolio" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Here’s some stuff I made recently.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Magna feugiat</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Veroeros primis</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#">Lorem ipsum</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								<h3><a href="#">Tempus dolore</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-								<h3><a href="#">Feugiat aliquam</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-								<h3><a href="#">Sed amet ornare</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
-				</div>
-			</article> -->
-
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<!-- <header>
-						<h2>Have me make stuff for you.</h2>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
-					</header> -->
-					<div class="row">
-						<!-- <div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div> -->
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<!-- <li><a href="#" class="icon brands fa-email-f"><span class="label">Email</span></a></li> -->
-
-								<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-								<li><a href="https://www.linkedin.com/in/andreapinto1994/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<!-- <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li> -->
-								<!-- <li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li> -->
-								<li><a href="https://github.com/pintauroo" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Last Update March 24.</li>
-						</ul>
-					</footer>
-				</div>
-			</article>
-
-
-			<!-- <script>
-				document.getElementById("pdf").addEventListener("click", function() {
-					window.location.href = "https://github.com/pintauroo/pintauroo.github.io/blob/main/AndreaPinto_Resume.pdf";
-				});
-				</script> -->
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
